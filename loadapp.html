@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>แก้วรวมช่อ Mobile Application</title>
+ </head>
+ <body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function (){
+	 if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+		 window.location.href = 'https://play.google.com/store/apps/details?id=th.ac.ssru.kaewruamchor&hl=th';
+	 }
+	 else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+		 window.location.href = 'https://itunes.apple.com/th/app/%E0%B9%81%E0%B8%81-%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%8A-%E0%B8%AD/id1324934585?mt=8';
+	 }
+	 else {
+		 window.location.href = 'https://reg.ssru.ac.th/ssru80th/';
+	 }
+	});
+</script>
+ </body>
+</html>
